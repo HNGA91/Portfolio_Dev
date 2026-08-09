@@ -7,10 +7,10 @@ interface ThemeProviderProps {
 	children: ReactNode;
 }
 
-export function ThemeProvider({ children }: ThemeProviderProps) {
+export const ThemeProvider = ({ children }: ThemeProviderProps) => {
 	const [theme, setTheme] = useState<Theme>("light");
 
-	function toggleTheme() {
+	const toggleTheme = () => {
 		setTheme((prev) => (prev === "light" ? "dark" : "light"));
 	}
 
