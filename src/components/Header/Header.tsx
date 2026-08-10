@@ -1,12 +1,14 @@
 import styles from "./Header.module.css";
+import { useTheme } from "../../context/useTheme";
 import { useActiveSection } from "../../hooks/useActiveSection";
 import { useScrollProgress } from "../../hooks/useScrollProgress";
 import { SECTION_IDS } from "../../data/sectionIds";
-import { Home, UserRound, ListChecks, FolderGit2, Mail } from "lucide-react";
+import { Home, UserRound, ListChecks, FolderGit2, Mail, Sun, Moon } from "lucide-react";
 
 export const Header = () => {
     const activeSection = useActiveSection(SECTION_IDS);
     const scrollProgress = useScrollProgress();
+    const { theme, toggleTheme } = useTheme();
 
 	return (
 		<header className={styles.header}>
@@ -54,8 +56,14 @@ export const Header = () => {
 
 			<div className={styles.right}>
 				<div className={styles.actions}>
-                    {/* Bouton langue et bouton thème arriveront ici */}
-                </div>
+					<button className={styles.themeToggle} onClick={toggleTheme} aria-label="Changer de thème" aria-pressed={theme === "dark"}>
+						<Sun size={16} />
+						<span className={styles.toggleTrack}>
+							<span className={styles.toggleThumb} />
+						</span>
+						<Moon size={16} />
+					</button>
+				</div>
 				<div className={styles.progressTrack}>
 					<div className={styles.progressFill} style={{ width: `${scrollProgress}%` }} />
 				</div>
