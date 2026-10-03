@@ -1,18 +1,20 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import ReactCountryFlag from "react-country-flag";
+import { useTranslation } from "react-i18next";
 import { useLanguage } from "../../context/useLanguage";
 import type { Language } from "../../types/language";
 import styles from "./LanguageSwitcher.module.css";
 
-const LANGUAGES = {
-	fr: { code: "FR", label: "Français" },
-	en: { code: "GB", label: "English" },
-	pt: { code: "PT", label: "Portugais" },
+const LANGUAGE_CODES = {
+	fr: "FR",
+	en: "GB",
+	pt: "PT",
 } as const;
 
 export const LanguageSwitcher = () => {
 	const { language, setLanguage } = useLanguage();
+	const { t } = useTranslation();
 	const [isOpen, setIsOpen] = useState(false);
 
 	const handleSelect = (lang: Language) => {
@@ -23,18 +25,18 @@ export const LanguageSwitcher = () => {
 	return (
 		<div className={styles.wrapper}>
 			<button className={styles.trigger} onClick={() => setIsOpen((prev) => !prev)} aria-expanded={isOpen} aria-label="Changer de langue">
-				<ReactCountryFlag countryCode={LANGUAGES[language].code} svg />
+				<ReactCountryFlag countryCode={LANGUAGE_CODES[language]} svg />
 				<span>{language.toUpperCase()}</span>
 				<ChevronDown size={18} />
 			</button>
 
 			{isOpen && (
 				<ul className={styles.menu}>
-					{(Object.entries(LANGUAGES) as [Language, (typeof LANGUAGES)[Language]][]).map(([code, { code: flagCode, label }]) => (
+					{(Object.entries(LANGUAGE_CODES) as [Language, string][]).map(([code, flagCode]) => (
 						<li key={code}>
 							<button onClick={() => handleSelect(code)}>
 								<ReactCountryFlag countryCode={flagCode} svg />
-								{label}
+								{t(`languages.${code}`)}
 							</button>
 						</li>
 					))}

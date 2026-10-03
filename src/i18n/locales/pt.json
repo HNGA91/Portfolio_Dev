@@ -1,9 +1,19 @@
 {
 	"nav": {
 		"home": "Página inicial",
-		"about": "Acerca de Mim",
+		"about": "Acerca de mim",
 		"skills": "Competências",
 		"projects": "Projetos",
 		"contact": "Contacto"
+	},
+	"languages": {
+		"fr": "Francês",
+		"en": "Inglês",
+		"pt": "Português"
+	},
+	"about": {
+		"title": "Acerca de mim",
+		"text": "Programador Full-Stack certificado (Título RNCP Nível 6 – INSTA Paris), gosto de pensar num projeto como um sistema: da arquitetura dos dados à experiência do utilizador, passando pela lógica de negócio. Concebo aplicações web de ponta a ponta, com a preocupação de estruturar e industrializar os meus desenvolvimentos — testes, CI/CD, boas práticas. Curioso e rigoroso, dedico uma boa parte do meu tempo livre a explorar novas ferramentas e a aprofundar os meus projetos pessoais, sempre com a ideia de colocar esta exigência ao serviço de uma equipa e de projetos concretos.",
+		"button": "Descarregar o meu currículo"
 	}
 }

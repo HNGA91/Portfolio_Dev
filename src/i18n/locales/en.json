@@ -5,5 +5,15 @@
 		"skills": "Skills",
 		"projects": "Projects",
 		"contact": "Contact"
+	},
+	"languages": {
+		"fr": "French",
+		"en": "English",
+		"pt": "Portuguese"
+	},
+	"about": {
+		"title": "About me",
+		"text": "As a certified Full Stack Developer (RNCP Title Level 6 – INSTA Paris), I like to think of a project as a system: from data architecture to user experience, including business logic. I design web applications from start to finish, with the aim of structuring and industrializing my developments—tests, CI/CD, best practices. Curious and rigorous, I spend a good part of my free time exploring new tools and deepening my personal projects, always with the idea to put this requirement at the service of a team and concrete projects.",
+		"button": "Download my Resume"
 	}
 }
