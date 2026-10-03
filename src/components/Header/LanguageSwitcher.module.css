@@ -23,7 +23,7 @@
 	top: calc(100% + 8px);
 	right: 0;
 	min-width: 160px;
-	background-color: var(--color-bg);
+	background-color: var(--color-bg-header);
 	border: 1px solid var(--color-border);
 	border-radius: 8px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -42,5 +42,6 @@
 }
 
 .menu li button:hover {
-	background-color: var(--color-bg-secondary);
+	background-color: var(--color-orange);
+    color: var(--color-lang-text-hover);
 }

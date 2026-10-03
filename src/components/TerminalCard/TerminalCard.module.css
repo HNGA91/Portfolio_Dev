@@ -1,0 +1,110 @@
+/****************************/
+/**                        **/
+/**     CONTAINER          **/
+/**                        **/
+/****************************/
+
+.card {
+	position: relative;
+	isolation: isolate;
+	--terminal-title-size: 1.5rem;
+}
+
+/****************************/
+/**                        **/
+/**     WINDOW             **/
+/**                        **/
+/****************************/
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+    overflow: hidden;
+}
+
+.window {
+	display: flex;
+	align-items: center;
+	gap: 0.35em;
+	padding: 0.6em 0.85em;
+	font-size: var(--terminal-title-size);
+    background: var(--terminal-bar-bg);
+	border-bottom: 1px solid var(--color-terminal-bar-border);
+}
+
+.dot {
+	width: 0.5em;
+	height: 0.5em;
+	border-radius: 50%;
+	flex-shrink: 0;
+}
+
+.close {
+	background-color: #ff5f57;
+}
+
+.minimize {
+	background-color: #febc2e;
+}
+
+.resize {
+	background-color: #28c840;
+}
+
+.title {
+	margin-left: 0.35em;
+	font-size: 1em;
+	color: var(--color-orange);
+}
+
+.body {
+    flex-grow: 1;
+	padding: 24px 32px 32px;
+    background: var(--terminal-body-bg);
+    box-shadow: var(--terminal-body-shadow);
+}
+
+/****************************/
+/**                        **/
+/**     LIGHT THEME        **/
+/**                        **/
+/****************************/
+
+
+:root[data-theme="light"] .card {
+	padding: 5px;
+}
+
+:root[data-theme="light"] .wrapper {
+	box-shadow:
+        0 0 0 1px var(--color-terminal-outline),
+		1px 1px 2px #ffffff,
+		-1px -1px 2px #80808022;
+}
+
+/****************************/
+/**                        **/
+/**     DARK THEME         **/
+/**                        **/
+/****************************/
+
+:root[data-theme="dark"] .wrapper {
+	border: 5px solid transparent;
+	background:
+		linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
+		var(--gradient-neon) border-box;
+}
+
+:root[data-theme="dark"] .card::before {
+	content: "";
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	transform: scale(0.8);
+	filter: blur(25px);
+	background: var(--gradient-neon);
+}

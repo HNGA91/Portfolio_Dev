@@ -8,6 +8,7 @@ import styles from "./LanguageSwitcher.module.css";
 const LANGUAGES = {
 	fr: { code: "FR", label: "Français" },
 	en: { code: "GB", label: "English" },
+	pt: { code: "PT", label: "Portugais" },
 } as const;
 
 export const LanguageSwitcher = () => {

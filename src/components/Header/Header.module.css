@@ -8,7 +8,7 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 32px;
-	background-color: var(--color-bg);
+	background-color: var(--color-bg-header);
 	border-bottom: 1px solid var(--color-border);
 	z-index: 100;
 }
@@ -53,8 +53,8 @@
 }
 
 .navList a.active {
-	background-color: var(--color-primary);
-	color: white;
+	background-color: var(--color-orange);
+	color: var(--color-header-navlist-active);
 	font-weight: 700;
 }
 
@@ -87,7 +87,7 @@
 
 .progressFill {
 	height: 100%;
-	background: linear-gradient(90deg, var(--color-primary), #a855f7);
+	background: linear-gradient(to right, var(--color-orange) 33%, #ff0f7b);
 	border-radius: 999px;
 	transition: width 0.1s linear;
 }
@@ -119,10 +119,18 @@
 	width: 16px;
 	height: 16px;
 	border-radius: 50%;
-	background-color: var(--color-primary);
+	background-color: var(--color-orange);
 	transition: transform 0.2s ease;
 }
 
 :root[data-theme="dark"] .toggleThumb {
 	transform: translateX(16px);
+}
+
+.spanTittle {
+	width: fit-content;
+	background: linear-gradient(to right, var(--color-orange) 60%, #ff0f7b);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }

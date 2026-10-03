@@ -1,0 +1,42 @@
+.section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 32px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.text {
+	line-height: 1.7;
+	color: var(--color-text);
+}
+
+.socials {
+	display: flex;
+    align-items: center;
+	gap: 20px;
+	margin-top: 32px;
+}
+
+.socials a {
+    display: inline-flex;
+	align-items: center; 
+	gap: 8px;  
+	color: var(--color-orange);
+	transition: color 0.2s ease;
+}
+
+.cvButton {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 32px;
+	padding: 12px 24px;
+	width: fit-content;
+	background-color: var(--color-orange);
+	color: white;
+	border-radius: 8px;
+	font-weight: 600;
+}

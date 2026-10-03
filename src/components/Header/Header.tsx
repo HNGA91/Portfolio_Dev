@@ -17,8 +17,8 @@ export const Header = () => {
 		<header className={styles.header}>
 			<div className={styles.left}>
 				<span className={styles.name}>
-					<span>&gt;_N'Goma</span>
-					<span>&gt;_Louis-Hervé</span>
+					<span className={styles.spanTittle}>&gt;_N'Goma</span>
+					<span className={styles.spanTittle}>&gt;_Louis-Hervé</span>
 				</span>
 			</div>
 
