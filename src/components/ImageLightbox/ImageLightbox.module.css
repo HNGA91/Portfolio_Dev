@@ -1,0 +1,52 @@
+.backdrop {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dialog {
+	position: relative;
+	display: flex;
+	width: min(1300px, 90vw);
+	height: min(80vh, 800px);
+}
+
+.dialog > :first-child {
+	flex: 1;
+	min-width: 0;
+}
+
+.media {
+	position: relative;
+	flex: 1;
+	min-height: 0;
+	background-color: var(--terminal-bar-bg);
+}
+
+.media > * {
+	position: absolute;
+	inset: 0;
+}
+
+.close {
+	position: absolute;
+	top: 14px;
+	right: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	color: var(--color-text);
+	transition: color 0.2s ease;
+}
+
+.close:hover {
+	color: var(--color-orange);
+}

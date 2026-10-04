@@ -1,0 +1,68 @@
+.carousel {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.45);
+	color: white;
+	transition: background-color 0.2s ease;
+}
+
+.arrow:hover {
+	background-color: var(--color-orange);
+}
+
+.arrowLeft {
+	left: 12px;
+}
+
+.arrowRight {
+	right: 12px;
+}
+
+.dots {
+	position: absolute;
+	bottom: 12px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 8px;
+}
+
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.6);
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+	transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dot[aria-current="true"] {
+	background-color: var(--color-orange);
+	transform: scale(1.3);
+}
+
+.imageButton {
+	display: block;
+	width: 100%;
+	height: 100%;
+	cursor: zoom-in;
+}

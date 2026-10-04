@@ -7,6 +7,8 @@
 .card {
 	position: relative;
 	isolation: isolate;
+    display: flex;
+	flex-direction: column;
 	--terminal-title-size: 1.5rem;
 }
 
@@ -17,6 +19,7 @@
 /****************************/
 
 .wrapper {
+    flex: 1;
 	display: flex;
 	flex-direction: column;
 	border-radius: 20px;
@@ -65,6 +68,12 @@
     box-shadow: var(--terminal-body-shadow);
 }
 
+.card.flush .body {
+    padding: 0;
+    display: flex;
+	flex-direction: column;
+}
+
 /****************************/
 /**                        **/
 /**     LIGHT THEME        **/
@@ -104,8 +113,4 @@
 	transform: scale(0.85);
 	filter: blur(20px);
 	background: var(--gradient-neon);
-}
-
-:root[data-theme="dark"] .card.noGlow::before {
-	display: none;
 }

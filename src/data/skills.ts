@@ -27,40 +27,35 @@ import uml from "../assets/icons/techno/uml.svg";
 import wamp from "../assets/icons/techno/wamp.svg";
 import type { Skill } from "../types/skill";
 
-export const FRONTEND_SKILLS: Skill[] = [
-	{ name: "Bootstrap", icon: bootstrap },
-	{ name: "CSS3", icon: css3 },
-	{ name: "HTML5", icon: html5 },
-	{ name: "Javascript", icon: javascript },
-	{ name: "React", icon: react },
-	{ name: "Typescript", icon: typescript }
-];
+export const AGILE: Skill = { name: "Agile", icon: agile };
+export const ASPNETCORE: Skill = { name: "ASP.NET Core", icon: aspnetcore };
+export const BOOTSTRAP: Skill = { name: "Bootstrap", icon: bootstrap };
+export const CSHARP: Skill = { name: "C#", icon: csharp };
+export const CSS3: Skill = { name: "CSS3", icon: css3 };
+export const EXPRESS: Skill = { name: "Express", icon: express };
+export const FIGMA: Skill = { name: "Figma", icon: figma };
+export const GIT: Skill = { name: "Git", icon: git };
+export const GITHUB: Skill = { name: "GitHub", icon: github };
+export const GITLAB: Skill = { name: "GitLab", icon: gitlab };
+export const HTML5: Skill = { name: "HTML5", icon: html5 };
+export const JAVASCRIPT: Skill = { name: "Javascript", icon: javascript };
+export const MONGODB: Skill = { name: "MongoDB", icon: mongodb };
+export const MYSQL: Skill = { name: "MySQL", icon: mysql };
+export const MYSQL_WORKBENCH: Skill = { name: "MySQL Workbench", icon: mysqlWorkbench };
+export const NODEJS: Skill = { name: "Node.js", icon: nodejs };
+export const PHP: Skill = { name: "PHP", icon: php };
+export const PHPMYADMIN: Skill = { name: "phpMyAdmin", icon: phpmyadmin };
+export const POSTMAN: Skill = { name: "Postman", icon: postman };
+export const REACT: Skill = { name: "React", icon: react };
+export const SQL: Skill = { name: "SQL", icon: sql };
+export const SYMFONY: Skill = { name: "Symfony", icon: symfony };
+export const TRELLO: Skill = { name: "Trello", icon: trello };
+export const TWIG: Skill = { name: "Twig", icon: twig };
+export const TYPESCRIPT: Skill = { name: "Typescript", icon: typescript };
+export const UML: Skill = { name: "UML", icon: uml };
+export const WAMP: Skill = { name: "WAMP", icon: wamp };
 
-export const BACKEND_SKILLS: Skill[] = [
-	{ name: "ASP.NET Core", icon: aspnetcore },
-	{ name: "C#", icon: csharp },
-	{ name: "Express", icon: express },
-	{ name: "Node.js", icon: nodejs },
-	{ name: "PHP", icon: php },
-	{ name: "Symfony", icon: symfony },
-	{ name: "Twig", icon: twig }
-];
-
-export const DATABASE_SKILLS: Skill[] = [
-    { name: "MongoDB", icon: mongodb },
-    { name: "MySQL", icon: mysql },
-    { name: "SQL", icon: sql }
-];
-export const TOOLS_SKILLS: Skill[] = [
-	{ name: "Agile", icon: agile },
-	{ name: "Figma", icon: figma },
-	{ name: "Git", icon: git },
-	{ name: "GitHub", icon: github },
-	{ name: "GitLab", icon: gitlab },
-	{ name: "MySQL Workbench", icon: mysqlWorkbench },
-	{ name: "phpMyAdmin", icon: phpmyadmin },
-	{ name: "Postman", icon: postman },
-	{ name: "Trello", icon: trello },
-	{ name: "UML", icon: uml },
-	{ name: "WAMP", icon: wamp },
-];
+export const FRONTEND_SKILLS: Skill[] = [BOOTSTRAP, CSS3, HTML5, JAVASCRIPT, REACT, TYPESCRIPT];
+export const BACKEND_SKILLS: Skill[] = [ASPNETCORE, CSHARP, EXPRESS, NODEJS, PHP, SYMFONY, TWIG];
+export const DATABASE_SKILLS: Skill[] = [MONGODB, MYSQL, SQL];
+export const TOOLS_SKILLS: Skill[] = [AGILE, FIGMA, GIT, GITHUB, GITLAB, MYSQL_WORKBENCH, PHPMYADMIN, POSTMAN, TRELLO, UML, WAMP];

@@ -30,7 +30,7 @@ export const SkillsSection = () => {
 			</div>
 
 			<div className={styles.row}>
-				<TerminalCard title={t("skillsCards.database")} noGlow>
+				<TerminalCard title={t("skillsCards.database")}>
 					<div className={styles.grid}>
 						{DATABASE_SKILLS.map((skill) => (
 							<SkillCard key={skill.name} {...skill} />

@@ -7,8 +7,8 @@ import type { Language } from "../../types/language";
 import styles from "./LanguageSwitcher.module.css";
 
 const LANGUAGE_CODES = {
-	fr: "FR",
 	en: "GB",
+	fr: "FR",
 	pt: "PT",
 } as const;
 

@@ -26,5 +26,43 @@
 	"skillsCards": {
 		"database": "Base de données",
 		"tools": "Outils"
+	},
+	"projects": {
+        "carousel": {
+			"previous": "Image précédente",
+			"next": "Image suivante",
+			"goTo": "Aller à l'image {{number}}",
+			"enlarge": "Agrandir l'image",
+			"close": "Fermer"
+		},
+		"tabs": { "description": "Description", "technologies": "Technologies", "links": "Liens" },
+		"website": "Site web",
+		"code": "Code",
+		"items": {
+			"cloud-quizz": {
+				"title": "Cloud Quizz",
+				"description": "Plateforme e-commerce combinant quiz interactifs, forums communautaires et boutique en ligne. Chaque quiz dispose de son propre espace d'échange, et les utilisateurs peuvent enrichir leur expérience en achetant des quiz ou jeux additionnels via la boutique intégrée. Le projet intègre un système de rôles (utilisateur, premium, modérateur, administrateur), un paiement sécurisé via Stripe, ainsi qu'un mode maintenance basculable automatiquement."
+			},
+			"tech-city-front": {
+				"title": "Tech City — Front-End",
+				"description": "Application e-commerce frontend dédiée à la vente de composants et périphériques informatiques. Elle permet de parcourir un catalogue de produits, gérer un panier synchronisé avec le backend, sauvegarder des favoris, consulter l'historique des commandes et télécharger ses factures, et payer en ligne de façon sécurisée via Stripe. Une interface d'administration dédiée permet la gestion des produits, commandes et utilisateurs."
+			},
+			"tech-city-back": {
+				"title": "Tech City — Back-End",
+				"description": "API REST qui alimente la plateforme e-commerce Tech City. Elle gère l'authentification par JWT avec refresh token, le catalogue de produits, le panier et les favoris, les commandes avec génération de factures PDF, le paiement sécurisé via Stripe, et l'envoi d'emails transactionnels. Plusieurs mécanismes de sécurité sont mis en œuvre : hachage des mots de passe, protection contre le bruteforce, limitation du taux de requêtes et headers HTTP sécurisés."
+			},
+			"portfolio-dev": {
+				"title": "Portfolio Développeur",
+				"description": "Portfolio personnel développé en React et TypeScript, pensé pour présenter mon parcours, mes compétences et mes projets. Entièrement trilingue (français, anglais, portugais), avec thème clair et sombre, animations soignées et une identité visuelle inspirée des terminaux de développement. C'était mon premier projet réalisé en TypeScript."
+			},
+			"api-meteo": {
+				"title": "API Météo",
+				"description": "Application météo consommant l'API WeatherAPI.com pour afficher la météo actuelle, les prévisions sur 3 jours, la qualité de l'air (indice US EPA) et les alertes météorologiques d'une localisation. La recherche s'effectue par nom de ville, code postal ou coordonnées GPS. Toute la logique d'appel réseau est isolée dans un hook personnalisé, pour séparer clairement la récupération des données de leur affichage."
+			},
+			"redux-bookshelf": {
+				"title": "Redux Bookshelf",
+				"description": "Gestionnaire de bibliothèque personnelle permettant d'ajouter ses livres manuellement ou de les rechercher via l'API Google Books, puis de les enregistrer dans sa bibliothèque, persistée dans le navigateur. Le projet met en pratique Redux « classique » (sans Redux Toolkit) : store, reducers purs, action creators et gestion de l'asynchrone avec le middleware Redux Thunk, dans une architecture séparant composants de présentation et containers connectés au store."
+			}
+		}
 	}
 }

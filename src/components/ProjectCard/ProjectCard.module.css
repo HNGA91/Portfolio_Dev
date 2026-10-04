@@ -1,0 +1,68 @@
+.media {
+	aspect-ratio: 16 / 9;
+    flex-shrink: 0;
+    background-color: var(--terminal-bar-bg);
+}
+
+.panels {
+	display: grid;
+	flex-grow: 1;
+}
+
+.panel {
+	grid-area: 1 / 1;
+    display: flex;
+	flex-direction: column;
+	padding: 20px 24px;
+	color: var(--color-text);
+	line-height: 1.6;
+}
+
+.panelHidden {
+	visibility: hidden;
+}
+
+.techGrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px 16px;
+}
+
+.links {
+    flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+	justify-content: space-around;
+	gap: 16px;
+}
+
+.linkButton {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 24px;
+	background-color: var(--color-orange);
+	color: white;
+	border-radius: 8px;
+	font-weight: 600;
+}
+
+.tabs {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	border-top: 1px solid var(--color-border);
+}
+
+.tab {
+	padding: 14px 8px;
+	color: var(--color-text);
+	border-bottom: 3px solid transparent;
+	transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.tab[aria-selected="true"] {
+    color: var(--color-orange);
+	border-bottom-color: var(--color-orange);
+	font-weight: 700;
+}

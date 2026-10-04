@@ -11,7 +11,7 @@
 		"en": "Inglês",
 		"pt": "Português"
 	},
-    "home": { "role": "Programador" },
+	"home": { "role": "Programador" },
 	"sections": {
 		"about": "Acerca de mim",
 		"skills": "Competências",
@@ -26,5 +26,43 @@
 	"skillsCards": {
 		"database": "Base de dados",
 		"tools": "Ferramentas"
+	},
+	"projects": {
+        "carousel": {
+			"previous": "Imagem anterior",
+			"next": "Imagem seguinte",
+			"goTo": "Ir para a imagem {{number}}",
+			"enlarge": "Ampliar imagem",
+			"close": "Fechar"
+		},
+		"tabs": { "description": "Descrição", "technologies": "Tecnologias", "links": "Ligações" },
+		"website": "Website",
+		"code": "Código",
+		"items": {
+			"cloud-quizz": {
+				"title": "Cloud Quizz",
+				"description": "Plataforma de comércio eletrónico que combina quizzes interativos, fóruns comunitários e loja online. Cada quiz tem o seu próprio espaço de debate, e os utilizadores podem enriquecer a sua experiência comprando quizzes ou jogos adicionais através da loja integrada. O projeto integra um sistema de perfis (utilizador, premium, moderador, administrador), um pagamento seguro via Stripe e um modo de manutenção que se ativa automaticamente."
+			},
+			"tech-city-front": {
+				"title": "Tech City — Front-End",
+				"description": "Aplicação de comércio eletrónico (frontend) dedicada à venda de componentes e periféricos informáticos. Permite navegar por um catálogo de produtos, gerir um carrinho sincronizado com o backend, guardar favoritos, consultar o histórico de encomendas e descarregar as respetivas faturas, e pagar online de forma segura via Stripe. Uma interface de administração dedicada permite a gestão de produtos, encomendas e utilizadores."
+			},
+			"tech-city-back": {
+				"title": "Tech City — Back-End",
+				"description": "API REST que alimenta a plataforma de comércio eletrónico Tech City. Gere a autenticação por JWT com refresh token, o catálogo de produtos, o carrinho e os favoritos, as encomendas com geração de faturas em PDF, o pagamento seguro via Stripe e o envio de e-mails transacionais. Vários mecanismos de segurança foram implementados: hash das palavras-passe, proteção contra ataques de força bruta, limitação da taxa de pedidos e cabeçalhos HTTP seguros."
+			},
+			"portfolio-dev": {
+				"title": "Portefólio de Programador",
+				"description": "Portefólio pessoal desenvolvido em React e TypeScript, pensado para apresentar o meu percurso, as minhas competências e os meus projetos. Totalmente trilingue (francês, inglês, português), com tema claro e escuro, animações cuidadas e uma identidade visual inspirada nos terminais de desenvolvimento. Foi o meu primeiro projeto em TypeScript."
+			},
+			"api-meteo": {
+				"title": "API Meteorologia",
+				"description": "Aplicação meteorológica que consome a API WeatherAPI.com para apresentar o estado do tempo atual, as previsões a 3 dias, a qualidade do ar (índice US EPA) e os alertas meteorológicos de uma localização. A pesquisa pode ser feita por nome de cidade, código postal ou coordenadas GPS. Toda a lógica de chamadas de rede está isolada num hook personalizado, para separar claramente a obtenção dos dados da sua apresentação."
+			},
+			"redux-bookshelf": {
+				"title": "Redux Biblioteca",
+				"description": "Gestor de biblioteca pessoal que permite adicionar livros manualmente ou pesquisá-los através da API do Google Books e guardá-los na biblioteca, que fica persistida no browser. O projeto coloca em prática o Redux «clássico» (sem Redux Toolkit): store, reducers puros, action creators e gestão assíncrona com o middleware Redux Thunk, numa arquitetura que separa os componentes de apresentação dos containers ligados à store."
+			}
+		}
 	}
 }
