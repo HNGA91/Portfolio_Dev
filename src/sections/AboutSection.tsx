@@ -2,6 +2,7 @@ import { Mail, Download } from "lucide-react";
 import linkedinIcon from "../assets/icons/social/linkedin.svg";
 import githubIcon from "../assets/icons/techno/github.svg";
 import { TerminalCard } from "../components/TerminalCard/TerminalCard";
+import { SectionTitle } from "../components/SectionTitle/SectionTitle";
 import { useTranslation } from "react-i18next";
 import styles from "./AboutSection.module.css";
 
@@ -10,6 +11,9 @@ export const AboutSection = () => {
 
 	return (
 		<section id="about" className={styles.section}>
+			<SectionTitle>
+				{t("sections.about")}
+			</SectionTitle>
 			<TerminalCard title={t("about.title")}>
 				<p className={styles.text}>{t("about.text")}</p>
 

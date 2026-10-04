@@ -11,9 +11,20 @@
 		"en": "Anglais",
 		"pt": "Portugais"
 	},
-    "about": {
-        "title": "À propos de moi",
-        "text": "Développeur Full Stack certifié (Titre RNCP Niveau 6 – INSTA Paris), j'aime penser un projet comme un système : de l'architecture des données à l'expérience utilisateur, en passant par la logique métier. Je conçois des applications web de bout en bout, avec le souci de structurer et d'industrialiser mes développements — tests, CI/CD, bonnes pratiques. Curieux et rigoureux, je consacre une bonne partie de mon temps libre à explorer de nouveaux outils et à approfondir mes projets personnels, toujours dans l'idée de mettre cette exigence au service d'une équipe et de projets concrets.",
-        "button": "Télécharger mon CV"
-    }
+	"home": { "role": "Développeur" },
+	"sections": {
+		"about": "À propos de moi",
+		"skills": "Compétences",
+		"projects": "Projets",
+		"contact": "Contact"
+	},
+	"about": {
+		"title": "À propos de moi",
+		"text": "Développeur Full Stack certifié (Titre RNCP Niveau 6 – INSTA Paris), j'aime penser un projet comme un système : de l'architecture des données à l'expérience utilisateur, en passant par la logique métier. Je conçois des applications web de bout en bout, avec le souci de structurer et d'industrialiser mes développements — tests, CI/CD, bonnes pratiques. Curieux et rigoureux, je consacre une bonne partie de mon temps libre à explorer de nouveaux outils et à approfondir mes projets personnels, toujours dans l'idée de mettre cette exigence au service d'une équipe et de projets concrets.",
+		"button": "Télécharger mon CV"
+	},
+	"skillsCards": {
+		"database": "Base de données",
+		"tools": "Outils"
+	}
 }

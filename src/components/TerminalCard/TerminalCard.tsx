@@ -4,11 +4,12 @@ import styles from "./TerminalCard.module.css";
 type TerminalCardProps = {
 	title: string;
 	children: ReactNode;
+	noGlow?: boolean;
 };
 
-export const TerminalCard = ({ title, children }: TerminalCardProps) => {
+export const TerminalCard = ({ title, children, noGlow = false }: TerminalCardProps) => {
 	return (
-		<div className={styles.card}>
+		<div className={`${styles.card} ${noGlow ? styles.noGlow : ""}`}>
 			<div className={styles.wrapper}>
 				<div className={styles.window}>
 					<i className={`${styles.dot} ${styles.close}`} aria-hidden="true"></i>
