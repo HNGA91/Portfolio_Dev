@@ -34,3 +34,21 @@
 		opacity: 0;
 	}
 }
+
+@media (max-width: 1200px) {
+	.title {
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+@media (max-width: 600px) {
+	.section {
+		min-height: 100svh;
+		padding: 0 16px;
+	}
+
+	.title {
+		gap: 0.3em;
+	}
+}

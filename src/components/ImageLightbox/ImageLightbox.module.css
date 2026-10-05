@@ -50,3 +50,19 @@
 .close:hover {
 	color: var(--color-orange);
 }
+
+@media (max-width: 600px) {
+	.backdrop {
+		padding: 8px;
+	}
+
+	.dialog {
+		width: 96vw;
+		height: min(70dvh, 700px);
+	}
+
+	.close {
+		top: 8px;
+		right: 10px;
+	}
+}

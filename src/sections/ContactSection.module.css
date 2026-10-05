@@ -54,3 +54,13 @@
 .feedbackError {
 	border-left-color: var(--color-error);
 }
+
+@media (max-width: 600px) {
+	.section {
+		padding: 48px 16px 80px;
+	}
+
+	.form {
+		gap: 28px;
+	}
+}

@@ -40,3 +40,21 @@
 	border-radius: 8px;
 	font-weight: 600;
 }
+
+@media (max-width: 900px) {
+	.section {
+		padding: 32px 24px;
+		scroll-margin-top: var(--header-height);
+	}
+}
+
+@media (max-width: 600px) {
+	.section {
+		padding: 32px 16px;
+	}
+
+	.socials {
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+}

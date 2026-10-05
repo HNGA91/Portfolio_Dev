@@ -114,3 +114,13 @@
 	filter: blur(20px);
 	background: var(--gradient-neon);
 }
+
+@media (max-width: 600px) {
+	.card {
+		--terminal-title-size: 1.1rem;
+	}
+
+	.body {
+		padding: 20px 16px 24px;
+	}
+}

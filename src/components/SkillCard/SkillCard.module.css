@@ -33,3 +33,7 @@
 .card:hover .name {
 	color: var(--color-orange);
 }
+
+.name {
+	text-align: center;
+}

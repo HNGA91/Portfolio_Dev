@@ -21,3 +21,17 @@
 .footer a {
 	font-size: 1.1rem;
 }
+
+@media (max-width: 900px) {
+	.footer {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+		gap: 8px;
+		padding: 20px 16px;
+	}
+
+	.footer a {
+		justify-self: center;
+	}
+}
