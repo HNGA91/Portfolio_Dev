@@ -34,6 +34,12 @@ img {
 	--header-height: 100px;
 }
 
+@media (max-width: 1200px) {
+	:root {
+		--header-height: 72px;
+	}
+}
+
 :root[data-theme="light"] {
 	--color-bg: #fffce9;
 	--color-bg-secondary: #ffffff;

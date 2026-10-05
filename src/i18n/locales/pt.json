@@ -1,4 +1,5 @@
 {
+    "header": { "openMenu": "Abrir menu", "closeMenu": "Fechar menu" },
 	"nav": {
 		"home": "Página inicial",
 		"about": "Acerca de mim",
