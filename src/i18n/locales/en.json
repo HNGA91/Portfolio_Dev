@@ -67,7 +67,7 @@
 	},
 	"contact": {
 		"cardTitle": "Send an email",
-		"fields": { "email": "Email address", "subject": "Subject", "message": "Message" },
+		"fields": { "email": "Your email address", "subject": "Subject", "message": "Message" },
 		"submit": "Contact me",
 		"sending": "Sending…",
 		"status": {
@@ -94,5 +94,6 @@
 			"remove": "Remove {{name}}",
 			"hint": "PDF, JPG, PNG, WebP or TXT — {{maxFiles}} files max, {{maxTotalMb}} MB in total"
 		}
-	}
+	},
+	"footer": { "developedBy": "Developed by", "rights": "All rights reserved." }
 }

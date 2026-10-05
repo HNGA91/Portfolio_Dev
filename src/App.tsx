@@ -6,6 +6,7 @@ import { ProjectsSection } from "./sections/ProjectsSection";
 import { ContactSection } from "./sections/ContactSection";
 import { useRef } from "react";
 import { useFlipOnThemeChange } from "./hooks/useFlipOnThemeChange";
+import { Footer } from "./components/Footer/Footer";
 
 export const App = () => {
     const mainRef = useRef<HTMLElement>(null);
@@ -21,6 +22,7 @@ export const App = () => {
 				<ProjectsSection />
 				<ContactSection />
 			</main>
+			<Footer />
 		</>
 	);
 };
