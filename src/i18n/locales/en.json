@@ -95,5 +95,13 @@
 			"hint": "PDF, JPG, PNG, WebP or TXT — {{maxFiles}} files max, {{maxTotalMb}} MB in total"
 		}
 	},
-	"footer": { "developedBy": "Developed by", "rights": "All rights reserved." }
+	"footer": { "developedBy": "Developed by", "rights": "All rights reserved." },
+	"errorPage": {
+		"messages": {
+			"404": "This page does not exist",
+			"500": "Something went wrong",
+			"default": "An error occurred"
+		},
+		"home": "Go home!"
+	}
 }

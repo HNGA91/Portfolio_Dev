@@ -95,5 +95,13 @@
 			"hint": "PDF, JPG, PNG, WebP ou TXT — máximo de {{maxFiles}} ficheiros, {{maxTotalMb}} MB no total"
 		}
 	},
-	"footer": { "developedBy": "Desenvolvido por", "rights": "Todos os direitos reservados." }
+	"footer": { "developedBy": "Desenvolvido por", "rights": "Todos os direitos reservados." },
+	"errorPage": {
+		"messages": {
+			"404": "Esta página não existe",
+			"500": "Algo correu mal",
+			"default": "Ocorreu um erro"
+		},
+		"home": "Voltar ao início!"
+	}
 }
