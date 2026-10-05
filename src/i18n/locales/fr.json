@@ -28,7 +28,7 @@
 		"tools": "Outils"
 	},
 	"projects": {
-        "carousel": {
+		"carousel": {
 			"previous": "Image précédente",
 			"next": "Image suivante",
 			"goTo": "Aller à l'image {{number}}",
@@ -63,6 +63,36 @@
 				"title": "Redux Bookshelf",
 				"description": "Gestionnaire de bibliothèque personnelle permettant d'ajouter ses livres manuellement ou de les rechercher via l'API Google Books, puis de les enregistrer dans sa bibliothèque, persistée dans le navigateur. Le projet met en pratique Redux « classique » (sans Redux Toolkit) : store, reducers purs, action creators et gestion de l'asynchrone avec le middleware Redux Thunk, dans une architecture séparant composants de présentation et containers connectés au store."
 			}
+		}
+	},
+	"contact": {
+		"cardTitle": "Envoyer un email",
+		"fields": { "email": "Adresse email", "subject": "Objet", "message": "Contenu" },
+		"submit": "Me contacter",
+		"sending": "Envoi en cours…",
+		"status": {
+			"success": "Merci ! Votre message a bien été envoyé.",
+			"error": "L'envoi a échoué. Réessayez dans un instant ou écrivez-moi directement par email.",
+			"tooFast": "Un instant ! Patientez quelques secondes avant d'envoyer."
+		},
+		"errors": {
+			"emailRequired": "Veuillez saisir votre adresse email.",
+			"emailInvalid": "Cette adresse email n'est pas valide.",
+			"subjectRequired": "Veuillez saisir un objet.",
+			"subjectTooLong": "L'objet ne doit pas dépasser {{subjectMax}} caractères.",
+			"messageRequired": "Veuillez saisir un message.",
+			"messageTooShort": "Le message doit contenir au moins {{messageMin}} caractères.",
+			"messageTooLong": "Le message ne doit pas dépasser {{messageMax}} caractères.",
+			"attachmentsTooMany": "Vous pouvez joindre {{maxFiles}} fichiers au maximum.",
+			"attachmentsBadType": "Formats acceptés : PDF, JPG, PNG, WebP et TXT.",
+			"attachmentsTooLarge": "La taille totale des pièces jointes ne doit pas dépasser {{maxTotalMb}} Mo.",
+			"emailRejected": "Cette adresse email n'est pas acceptée. Utilisez une adresse permanente.",
+			"attachmentsRejected": "Les pièces jointes ont été refusées. Vérifiez leur format et leur taille."
+		},
+		"attachments": {
+			"add": "Ajouter une pièce jointe",
+			"remove": "Retirer {{name}}",
+			"hint": "PDF, JPG, PNG, WebP ou TXT — {{maxFiles}} fichiers max, {{maxTotalMb}} Mo au total"
 		}
 	}
 }

@@ -1,0 +1,56 @@
+.section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 100px 32px 160px;
+	max-width: 1000px;
+	margin: 0 auto;
+	scroll-margin-top: calc(var(--header-height) + 1em);
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding-top: 12px;
+}
+
+.submit {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	align-self: flex-start;
+	margin-top: 24px;
+	padding: 12px 24px;
+	background-color: var(--color-orange);
+	color: white;
+	border-radius: 8px;
+	font-weight: 600;
+}
+
+.honeypot {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.submit:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.feedback {
+	margin-top: 16px;
+	padding: 12px 16px;
+	color: var(--color-text);
+	background-color: var(--terminal-bar-bg);
+	border-left: 4px solid var(--color-orange);
+	border-radius: 8px;
+}
+
+.feedbackError {
+	border-left-color: var(--color-error);
+}

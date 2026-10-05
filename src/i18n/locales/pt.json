@@ -28,7 +28,7 @@
 		"tools": "Ferramentas"
 	},
 	"projects": {
-        "carousel": {
+		"carousel": {
 			"previous": "Imagem anterior",
 			"next": "Imagem seguinte",
 			"goTo": "Ir para a imagem {{number}}",
@@ -63,6 +63,36 @@
 				"title": "Redux Biblioteca",
 				"description": "Gestor de biblioteca pessoal que permite adicionar livros manualmente ou pesquisá-los através da API do Google Books e guardá-los na biblioteca, que fica persistida no browser. O projeto coloca em prática o Redux «clássico» (sem Redux Toolkit): store, reducers puros, action creators e gestão assíncrona com o middleware Redux Thunk, numa arquitetura que separa os componentes de apresentação dos containers ligados à store."
 			}
+		}
+	},
+	"contact": {
+		"cardTitle": "Enviar um e-mail",
+		"fields": { "email": "Endereço de e-mail", "subject": "Assunto", "message": "Conteúdo" },
+		"submit": "Contactar-me",
+		"sending": "A enviar…",
+		"status": {
+			"success": "Obrigado! A sua mensagem foi enviada com sucesso.",
+			"error": "O envio falhou. Tente novamente dentro de momentos ou escreva-me diretamente por e-mail.",
+			"tooFast": "Um momento! Aguarde alguns segundos antes de enviar."
+		},
+		"errors": {
+			"emailRequired": "Introduza o seu endereço de e-mail.",
+			"emailInvalid": "Este endereço de e-mail não é válido.",
+			"subjectRequired": "Introduza um assunto.",
+			"subjectTooLong": "O assunto não pode exceder {{subjectMax}} caracteres.",
+			"messageRequired": "Introduza uma mensagem.",
+			"messageTooShort": "A mensagem deve ter pelo menos {{messageMin}} caracteres.",
+			"messageTooLong": "A mensagem não pode exceder {{messageMax}} caracteres.",
+			"attachmentsTooMany": "Pode anexar no máximo {{maxFiles}} ficheiros.",
+			"attachmentsBadType": "Formatos aceites: PDF, JPG, PNG, WebP e TXT.",
+			"attachmentsTooLarge": "O tamanho total dos anexos não pode exceder {{maxTotalMb}} MB.",
+			"emailRejected": "Este endereço de e-mail não é aceite. Utilize um endereço permanente.",
+			"attachmentsRejected": "Os anexos foram recusados. Verifique o formato e o tamanho."
+		},
+		"attachments": {
+			"add": "Adicionar um anexo",
+			"remove": "Remover {{name}}",
+			"hint": "PDF, JPG, PNG, WebP ou TXT — máximo de {{maxFiles}} ficheiros, {{maxTotalMb}} MB no total"
 		}
 	}
 }

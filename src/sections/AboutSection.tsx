@@ -11,9 +11,7 @@ export const AboutSection = () => {
 
 	return (
 		<section id="about" className={styles.section}>
-			<SectionTitle>
-				{t("sections.about")}
-			</SectionTitle>
+			<SectionTitle>{t("sections.about")}</SectionTitle>
 			<TerminalCard title={t("about.title")}>
 				<p className={styles.text}>{t("about.text")}</p>
 
@@ -24,7 +22,7 @@ export const AboutSection = () => {
 					<a href="https://github.com/HNGA91" target="_blank" rel="noopener noreferrer">
 						<img src={githubIcon} alt="GitHub" width={22} height={22} />
 					</a>
-					<a href="mailto:herve.ngoma@proton.me">
+					<a href="mailto:contact@herve-ngoma.dev">
 						<Mail size={25} /> contact@herve-ngoma.dev
 					</a>
 				</div>

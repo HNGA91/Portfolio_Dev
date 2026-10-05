@@ -48,6 +48,7 @@ img {
 	--terminal-body-shadow: inset 0 40px 32px #2222220d, inset 0 -56px 40px #ffffff;
 	--color-terminal-bar-border: #00000014;
 	--color-terminal-outline: #0000001f;
+    --color-error: #c62828;
 }
 
 :root[data-theme="dark"] {
@@ -64,6 +65,7 @@ img {
 	--terminal-body-bg: #262626;
 	--terminal-body-shadow: none;
 	--color-terminal-bar-border: #2a2a2e;
+    --color-error: #c62828;
 }
 
 main {

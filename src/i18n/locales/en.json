@@ -64,5 +64,35 @@
 				"description": "Personal library manager allowing you to add your books manually or to search for them via the Google Books API, then to save them in your library, which is persisted in the browser. The project puts into practice \"classic\" Redux (without Redux Toolkit): store, pure reducers, action creators and asynchronous management with Redux Thunk middleware, in an architecture separating presentation components and containers connected to the store."
 			}
 		}
+	},
+	"contact": {
+		"cardTitle": "Send an email",
+		"fields": { "email": "Email address", "subject": "Subject", "message": "Message" },
+		"submit": "Contact me",
+		"sending": "Sending…",
+		"status": {
+			"success": "Thank you! Your message has been sent.",
+			"error": "Sending failed. Please try again in a moment or email me directly.",
+			"tooFast": "One moment! Please wait a few seconds before sending."
+		},
+		"errors": {
+			"emailRequired": "Please enter your email address.",
+			"emailInvalid": "This email address is not valid.",
+			"subjectRequired": "Please enter a subject.",
+			"subjectTooLong": "The subject must not exceed {{subjectMax}} characters.",
+			"messageRequired": "Please enter a message.",
+			"messageTooShort": "The message must contain at least {{messageMin}} characters.",
+			"messageTooLong": "The message must not exceed {{messageMax}} characters.",
+			"attachmentsTooMany": "You can attach up to {{maxFiles}} files.",
+			"attachmentsBadType": "Accepted formats: PDF, JPG, PNG, WebP and TXT.",
+			"attachmentsTooLarge": "The total size of the attachments must not exceed {{maxTotalMb}} MB.",
+			"emailRejected": "This email address is not accepted. Please use a permanent address.",
+			"attachmentsRejected": "The attachments were rejected. Check their format and size."
+		},
+		"attachments": {
+			"add": "Add an attachment",
+			"remove": "Remove {{name}}",
+			"hint": "PDF, JPG, PNG, WebP or TXT — {{maxFiles}} files max, {{maxTotalMb}} MB in total"
+		}
 	}
 }
