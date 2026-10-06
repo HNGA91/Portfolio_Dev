@@ -25,19 +25,22 @@ export const ContactSection = () => {
 
 	const translateError = (key?: string) => (key ? t(key, CONTACT_LIMITS) : undefined);
 
-	const markStarted = () => {
-		if (startedAt.current === null) startedAt.current = Date.now();
+	const clearStatus = () => {
 		setStatus((prev) => (prev === "sending" ? prev : "idle"));
 	};
 
+	const handleFormInput = () => {
+		if (startedAt.current === null) startedAt.current = Date.now();
+	};
+
 	const updateField = (field: keyof ContactFormData) => (value: string) => {
-		markStarted();
+		clearStatus();
 		setFormData((prev) => ({ ...prev, [field]: value }));
 		setErrors((prev) => ({ ...prev, [field]: undefined }));
 	};
 
 	const updateAttachments = (files: File[]) => {
-		markStarted();
+		clearStatus();
 		setAttachments(files);
 		setErrors((prev) => ({ ...prev, attachments: undefined }));
 	};
@@ -92,7 +95,7 @@ export const ContactSection = () => {
 		<section id="contact" className={styles.section}>
 			<SectionTitle>{t("sections.contact")}</SectionTitle>
 			<TerminalCard title={t("contact.cardTitle")}>
-				<form className={styles.form} onSubmit={handleSubmit} noValidate>
+				<form className={styles.form} onSubmit={handleSubmit} onInput={handleFormInput} noValidate>
 					<div className={styles.honeypot} aria-hidden="true">
 						<label>
 							Website

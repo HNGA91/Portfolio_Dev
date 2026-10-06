@@ -1,4 +1,5 @@
 {
+    "meta": { "title": "Hervé N'Goma — Programador Full Stack" },
     "header": { "openMenu": "Abrir menu", "closeMenu": "Fechar menu" },
 	"nav": {
 		"home": "Página inicial",

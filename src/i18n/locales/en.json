@@ -1,4 +1,5 @@
 {
+    "meta": { "title": "Hervé N'Goma — Full Stack Developer" },
     "header": { "openMenu": "Open menu", "closeMenu": "Close menu" },
 	"nav": {
 		"home": "Home",

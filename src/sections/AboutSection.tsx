@@ -5,9 +5,18 @@ import { TerminalCard } from "../components/TerminalCard/TerminalCard";
 import { SectionTitle } from "../components/SectionTitle/SectionTitle";
 import { useTranslation } from "react-i18next";
 import styles from "./AboutSection.module.css";
+import { useLanguage } from "../context/useLanguage";
+import type { Language } from "../types/language";
+
+const CV_FILES: Record<Language, string> = {
+	fr: "/cv/CV-Portfolio-Developpeur-Web-fr.pdf",
+	en: "/cv/CV-Portfolio-Developpeur-Web-en.pdf",
+	pt: "/cv/CV-Portfolio-Developpeur-Web-pt.pdf",
+};
 
 export const AboutSection = () => {
     const { t } = useTranslation();
+    const { language } = useLanguage();
 
 	return (
 		<section id="about" className={styles.section}>
@@ -27,7 +36,7 @@ export const AboutSection = () => {
 					</a>
 				</div>
 
-				<a href="/cv/CV_NGoma_Louis-Herve.pdf" download className={styles.cvButton}>
+				<a href={CV_FILES[language]} download className={styles.cvButton}>
 					<Download size={18} />
 					{t("about.button")}
 				</a>
