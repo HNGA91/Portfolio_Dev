@@ -43,7 +43,7 @@
 		"items": {
 			"cloud-quizz": {
 				"title": "Cloud Quizz",
-				"description": "Plataforma de comércio eletrónico que combina quizzes interativos, fóruns comunitários e loja online. Cada quiz tem o seu próprio espaço de debate, e os utilizadores podem enriquecer a sua experiência comprando quizzes ou jogos adicionais através da loja integrada. O projeto integra um sistema de perfis (utilizador, premium, moderador, administrador), um pagamento seguro via Stripe e um modo de manutenção que se ativa automaticamente."
+				"description": "Plataforma de comércio eletrónico que combina quizzes interativos, fóruns comunitários e loja online. Cada quiz tem o seu próprio espaço de debate, e os utilizadores podem enriquecer a sua experiência comprando quizzes ou jogos adicionais através da loja integrada. O projeto integra um sistema de perfis (utilizador, premium, moderador, administrador), um pagamento seguro via Stripe e um modo de manutenção que se ativa automaticamente. Foi o meu primeiro projeto."
 			},
 			"tech-city-front": {
 				"title": "Tech City — Front-End",

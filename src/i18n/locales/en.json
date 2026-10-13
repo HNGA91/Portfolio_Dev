@@ -43,7 +43,7 @@
 		"items": {
 			"cloud-quizz": {
 				"title": "Cloud Quizz",
-				"description": "E-commerce platform combining interactive quizzes, community forums and online store. Each quiz has its own exchange area, and users can enrich their experience by purchasing additional quizzes or games via the integrated store. The project includes a role system (user, premium, moderator, administrator), secure payment via Stripe, and an automatically switchable maintenance mode."
+				"description": "E-commerce platform combining interactive quizzes, community forums and online store. Each quiz has its own exchange area, and users can enrich their experience by purchasing additional quizzes or games via the integrated store. The project includes a role system (user, premium, moderator, administrator), secure payment via Stripe, and an automatically switchable maintenance mode. It was my first project done."
 			},
 			"tech-city-front": {
 				"title": "Tech City — Front-End",
