@@ -42,7 +42,7 @@ import wamp from "../assets/icons/techno/wamp.svg";
 import type { Skill } from "../types/skill";
 
 export const AGILE: Skill = { name: "Agile", icon: agile };
-export const ANSROID_STUDIO: Skill = { name: "Android Studio", icon: androidStudio };
+export const ANDROID_STUDIO: Skill = { name: "Android Studio", icon: androidStudio };
 export const ASPNETCORE: Skill = { name: "ASP.NET Core", icon: aspnetcore };
 export const BOOTSTRAP: Skill = { name: "Bootstrap", icon: bootstrap };
 export const CSHARP: Skill = { name: "C#", icon: csharp };
@@ -88,7 +88,7 @@ export const BACKEND_SKILLS: Skill[] = [ASPNETCORE, CSHARP, EXPRESS, NODEJS, PHP
 export const DATABASE_SKILLS: Skill[] = [MONGODB, MONGOOSE_RED, MYSQL, SEQUELIZE, SQL];
 export const TOOLS_SKILLS: Skill[] = [
 	AGILE,
-	ANSROID_STUDIO,
+	ANDROID_STUDIO,
 	FIGMA,
 	GIT,
 	GITHUB,
