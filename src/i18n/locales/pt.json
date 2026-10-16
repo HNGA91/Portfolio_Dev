@@ -43,7 +43,7 @@
 		"items": {
 			"cloud-quizz": {
 				"title": "Cloud Quizz",
-				"description": "Plataforma de comércio eletrónico que combina quizzes interativos, fóruns comunitários e loja online. Cada quiz tem o seu próprio espaço de debate, e os utilizadores podem enriquecer a sua experiência comprando quizzes ou jogos adicionais através da loja integrada. O projeto integra um sistema de perfis (utilizador, premium, moderador, administrador), um pagamento seguro via Stripe e um modo de manutenção que se ativa automaticamente. Foi o meu primeiro projeto."
+				"description": "Aplicação de quizzes com fóruns por quiz, loja online e pagamentos Stripe. O meu primeiro projeto, totalmente remodelado em 2026 (foi o meu primeiro projeto): respostas verificadas pelo servidor, escolhas com imagens, correção de falhas de segurança (XSS, validação do pagamento), novo modelo de dados com migrações Doctrine e colocação em produção com Docker no Render e uma base de dados TiDB Cloud."
 			},
 			"tech-city-front": {
 				"title": "Tech City — Front-End",
